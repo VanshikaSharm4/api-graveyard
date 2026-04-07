@@ -1,0 +1,23 @@
+# Virtual environment
+venv/
+
+# Environment variables (NEVER commit this)
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Database
+*.db
+*.sqlite
+
+# IDE files
+.vscode/
+.idea/
+*.DS_Store
+
+# Docker volumes
+postgres_data/
