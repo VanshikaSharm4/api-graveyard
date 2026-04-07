@@ -1,0 +1,49 @@
+{
+  "info": {
+    "name": "Sample API Collection"
+  },
+  "item": [
+    {
+      "name": "Get All Users",
+      "request": {
+        "method": "GET",
+        "url": { "raw": "{{baseUrl}}/api/users" },
+        "description": "Returns a list of all users"
+      }
+    },
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "url": { "raw": "{{baseUrl}}/api/auth/login" },
+            "description": ""
+          }
+        },
+        {
+          "name": "Logout",
+          "request": {
+            "method": "POST",
+            "url": { "raw": "{{baseUrl}}/api/auth/logout" }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Delete User",
+      "request": {
+        "method": "DELETE",
+        "url": { "raw": "https://api.example.com/api/users/123" }
+      }
+    },
+    {
+      "name": "Legacy Endpoint",
+      "request": {
+        "method": "GET",
+        "url": { "raw": "{{baseUrl}}/api/v1/old-data?format=json&page=1" }
+      }
+    }
+  ]
+}
